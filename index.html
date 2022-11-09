@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+         .main-cnt{
+            position: relative;
+            width: 800px; height: 500px; border: 2px solid black; margin: 0 auto; margin-top: 100px;
+           
+         }
+         .main-cnt > p:nth-child(1){
+            font-size:25px; color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+         }
+         p{text-align: center;font-family: Arial, Helvetica, sans-serif;}
+         .last{
+            position: absolute; width: 450px; left: 175px; bottom: 40px;
+            text-align: center; background-color:rgb(240, 238, 238) ;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         p:last-child{
+            font-size: 15px; color: grey; opacity: .5; padding-left: 5px; padding-right: 5px;
+         }
+         .mid{
+            position: absolute; top: 180px; display: flex; width: 100%;
+            justify-content: space-around;
+         }
+         input[type=text]{position: relative;
+            width: 60px; height: 120px;  font-size: 60px; text-align: center;  border: 1px solid white;
+            
+         }
+           
+         ::placeholder{ position: absolute; 
+             font-size: 60px; color: grey; top: 30px; left: 15px;
+         }
+         .ip{
+            width:60px ; height: 120px;
+         }
+         input[type=text]:focus{
+            border: 1px solid blue; outline: none;
+         }
+      
+     
+      
+       </style>
+    </head>
+    <body>
+        <div class="main-cnt">
+           <p>Verify Your Account</p>
+           <p>We emailed you the six digit code to your emial id cool-guy@gmail.com<br> Enter the code below 
+        to confirm your email.</p>
+        
+        <div class="mid">
+            <div class="ip"><input type="text" placeholder="0" maxlength="1" id="i1" oninput="bll()"></div>
+            <div class="ip"><input type="text" placeholder="0"  maxlength="1" id="i2" oninput="bll2()"></div>
+            <div class="ip"><input type="text" placeholder="0"  maxlength="1" id="i3" oninput="bll3()"></div>
+            <div class="ip"><input type="text" placeholder="0"  maxlength="1" id="i4" oninput="bll4()"></div>
+            <div class="ip"><input type="text" placeholder="0"  maxlength="1" id="i5" oninput="bll5()"></div>
+            <div class="ip"><input type="text" placeholder="0"  maxlength="1" id="i6" oninput="bll6()"></div>
+        </div>
+
+        <div class="last">
+        <p>This is design only. We actually didn't send you an email as we don't have your emial, right?</p>
+        </div>
+        </div>
+      <script>
+         function bll(){
+            document.getElementById("i1").style.border="1px solid blue";
+            document.getElementById("i1").style.boxShadow="0px 5px  10px rgba(101, 101, 248,.5)";
+            
+         }
+         function bll2(){
+            document.getElementById("i2").style.border="1px solid blue";
+            document.getElementById("i2").style.boxShadow="0px 5px  10px rgba(101, 101, 248,.5)";
+         }
+         function bll3(){
+            document.getElementById("i3").style.border="1px solid blue";
+            document.getElementById("i3").style.boxShadow="0px 5px  10px rgba(101, 101, 248,.5)";
+         }
+         function bll4(){
+            document.getElementById("i4").style.border="1px solid blue";
+            document.getElementById("i4").style.boxShadow="0px 5px  10px rgba(101, 101, 248,.5)";
+         }
+         function bll5(){
+            document.getElementById("i5").style.border="1px solid blue";
+            document.getElementById("i5").style.boxShadow="0px 5px  10px rgba(101, 101, 248,.5)";
+         }
+         function bll6(){
+            document.getElementById("i6").style.border="1px solid blue";
+            document.getElementById("i6").style.boxShadow="0px 5px  10px rgba(101, 101, 248,.5)";
+         }
+      </script>
+
+    </body>
+</html>
